@@ -33,22 +33,27 @@
 #### Use Case 1: Playing a quick online match
 
 - **Goal:** Play a competitive pool match and earn coins/rewards.
+
 - **Context:** This is the most common use case. Sessions typically last 3–10 minutes, making them suitable during breaks, commuting, waiting in line, or relaxing at home.
+
 - **Where and When:**
   + Sitting at home on a sofa or bed.
   + Sitting in a café.
   + Sitting on public transportation.
   + Waiting at a bus stop, doctor's office, or school.
   + During short work or study breaks.
+
 - **User situation:**
   + Usually seated.
   + Occasionally standing while waiting somewhere.
   + Rarely used while walking because aiming requires precision.
+
 - **Interaction method:**
   + Tap buttons to navigate menus.
   + Drag finger to aim cue.
   + Pull power meter to control shot strength.
   + Tap chat/emote buttons.
+
 - **Interaction flow:**
   1. Open game.
   2. Select game mode.
@@ -61,26 +66,27 @@
 #### Use Case 2: Managing and Upgrading Equipment
 
 - **Goal:** Improve cue performance and customize equipment to gain advantages in future matches.
-- **Context:** Players collect and upgrade cues to improve attributes such as power, aim, spin, and time available per turn.
-- **Where and When:**
 
+- **Context:** Players collect and upgrade cues to improve attributes such as power, aim, spin, and time available per turn.
+
+- **Where and When:**
   + Between matches.
   + During downtime when users do not want to actively play.
   + While waiting for rewards, friends, or energy systems in other games.
-- **User situation:**
 
+- **User situation:**
   + Sitting on a sofa, chair, or bed.
   + Lying down while casually browsing menus.
   + Casual interaction requiring less concentration than gameplay.
-- **Interaction method:**
 
+- **Interaction method:**
   + Tap inventory and equipment menus.
   + Scroll through available cues.
   + View cue statistics and upgrade information.
   + Tap upgrade buttons to spend in-game currency.
   + Equip preferred cues through menu navigation.
-- **Interaction flow:**
 
+- **Interaction flow:**
   1. Open inventory or cue collection menu.
   2. Browse available cues.
   3. Select a cue.
@@ -92,27 +98,28 @@
 #### Use Case 3: Collecting Rewards and Progression
 
 - **Goal:** Claim rewards, monitor progression, and earn resources for future gameplay.
-- **Context:** Users log in daily to claim rewards, open victory boxes, complete missions, and track progression.
-- **Where and When:**
 
+- **Context:** Users log in daily to claim rewards, open victory boxes, complete missions, and track progression.
+
+- **Where and When:**
   + During daily login sessions.
   + During short breaks throughout the day.
   + Immediately after launching the game.
   + After completing matches.
-- **User situation:**
 
+- **User situation:**
   + Sitting, standing, lying down, or walking slowly.
   + Minimal attention and physical effort required.
   + Often performed as a quick routine activity.
-- **Interaction method:**
 
+- **Interaction method:**
   + Tap reward notifications.
   + Open victory boxes or reward containers.
   + Tap buttons to claim daily rewards.
   + Navigate mission and achievement screens.
   + Review progression indicators and level information.
-- **Interaction flow:**
 
+- **Interaction flow:**
   1. Open the game.
   2. View available rewards and notifications.
   3. Claim daily rewards.
@@ -124,25 +131,26 @@
 #### Use Case 4: Social Communication During Matches
 
 - **Goal:** Express emotions, interact with opponents or friends, and enhance social engagement during gameplay.
-- **Context:** Players communicate using predefined chat messages, emojis, and reactions during gameplay.
-- **Where and When:**
 
+- **Context:** Players communicate using predefined chat messages, emojis, and reactions during gameplay.
+
+- **Where and When:**
   + During online matches.
   + Particularly common when playing against friends.
   + During competitive or casual game sessions.
-- **User situation:**
 
+- **User situation:**
   + Sitting or standing.
   + Multitasking between gameplay and communication.
   + Maintaining focus on the match while interacting socially.
-- **Interaction method:**
 
+- **Interaction method:**
   + Tap chat or emoji buttons.
   + Select predefined messages or reactions.
   + Send quick social responses without typing.
   + View incoming messages displayed on-screen.
-- **Interaction flow:**
 
+- **Interaction flow:**
   1. Enter an online match.
   2. Open chat or emoji menu.
   3. Select a predefined message or reaction.
@@ -154,12 +162,77 @@
 
 ### 4. Interface Benefits Based on HCI Concepts
 
-| HCI Concept | Concrete Interface Benefit | Specific Use Case Example |
-| --- | --- | --- |
-| Human capabilities |  |  |
-| Mental model |  |  |
-| Interaction metaphor |  |  |
-| Usability |  |  |
+#### 4.1. Gameplay interface mirrors real-world billiards
+
+##### 4.1.1. Mental model
+- **Why it's related:** The game presents objects that exist in real billiards: cue stick, cue ball, object balls, pockets, and table. Players already have expectations about how these objects behave.
+- **Benefit:** Players can transfer existing knowledge from real billiards into the game, reducing learning effort.
+- **Exapmle:** A player who has played billiards before knows that hitting the cue ball into another ball will transfer momentum and potentially send the target ball into a pocket. When they start their first match, they can immediately predict what will happen without reading instructions.
+
+##### 4.1.2. Natural mapping
+- **Why it's related:** The controls resemble physical actions performed in real billiards. Rotating the cue changes aiming direction, and pulling back farther increases shot power.
+- **Benefit:** Users can understand controls intuitively because the relationship between action and result is direct.
+- **Example:** A player wants to hit the ball harder. Instead of adjusting a numerical strength value, they pull the cue farther backward. The stronger pull naturally produces a stronger shot, matching real-world expectations.
+
+##### 4.1.3. Interface metaphor
+- **Why it's related:** The entire gameplay screen acts as a digital representation of a real pool table.
+- **Benefit:** The metaphor helps users immediately recognize the purpose of interface elements.
+- **Example:** A beginner opening the game for the first time sees a pool table with balls and pockets. Even without a tutorial, they can infer that the goal is to pocket balls using the cue ball.
+
+#### 4.2. Aim Guideline Improves Shot Planning
+
+##### 4.2.1. Recognition vs Recall
+- **Why it's related:** The aim guideline visually shows the predicted path of the cue ball and target ball. Players do not need to remember billiard angles or estimate trajectories mentally.
+- **Benefit:** Reduces cognitive load and makes shot planning easier, especially for beginners.
+- **Example:** A new player wants to pocket a ball near a side pocket. Instead of calculating the angle themselves, they can immediately see the projected path displayed on the table and adjust their aim accordingly.
+
+##### 4.2.2. Feedback
+- **Why it's related:** The guideline updates continuously as the player changes the aiming direction.
+- **Benefit:** Provides immediate feedback about the effects of user actions, allowing quick corrections before committing to a shot.
+- **Example:** While adjusting aim, a player notices that the projected ball path no longer reaches the intended pocket. The guideline changes instantly, allowing them to readjust before shooting.
+
+#### 4.3. Bottom-Placed Controls Improve Mobile Use
+
+##### 4.3.1. Reachability
+- **Why it's related:** Frequently used controls such as cue adjustment, spin controls, and menu buttons are placed near the bottom portion of the screen where thumbs can easily reach them.
+- **Benefit:** Reduces physical effort and makes interactions more comfortable during gameplay.
+- **Example:** A player sitting on a bus holds the phone with one hand. They can access important controls using only their thumb without repositioning their grip.
+
+##### 4.3.2. Fitts' Law
+- **Why it's related:** Frequently used buttons are relatively large and positioned within easy reach, reducing movement distance and increasing target size.
+- **Benefit:** Allows faster and more accurate interactions, especially during time-limited turns.
+- **Example:** During a match, a player quickly opens the spin menu before their turn timer expires. The button is large and located near the thumb's resting area, allowing fast selection with minimal chance of tapping the wrong target.
+
+##### 4.3.3. One-Handed Usage
+- **Why it's related:** The interface is designed so most common interactions can be performed using a single thumb.
+- **Benefit:** Supports mobile usage in situations where the user cannot dedicate both hands to the device.
+- **Example:** A player waiting in line at a store is holding a bag in one hand. They can still aim shots, adjust power, and navigate menus using their free hand without significant difficulty.
+
+#### 4.4. Immediate Feedback After Each Shot
+
+##### 4.4.1. Feedback
+- **Why it's related:** The game immediately responds to player actions through ball movement, collision animations, sound effects, and turn indicators.
+- **Benefit:** Players can instantly understand whether their shot was successful and what happened as a result.
+- **Example:** After pocketing a ball, the player sees the ball fall into the pocket, hears the pocketing sound, and notices that their turn continues. The outcome of the shot is immediately clear without requiring additional explanation.
+
+#### 4.5. Important Buttons Are Easy to Recognize
+
+##### 4.5.1. Recognition Rather Than Recall
+- **Why it's related:** Major functions such as Play, Cue, Shop, Rewards, and Events are represented with visible icons and labels.
+- **Benefit:** Players can locate functions directly without remembering menu paths.
+- **Example:** A player who wants to claim rewards can identify the reward icon from the home screen without remembering where the feature is located.
+
+#### 4.6. Colorful Visual Design Increases Engagement
+
+##### 4.6.1. Color Perception
+- **Why it's related:** The interface uses bright colors to distinguish game elements, rewards, currencies, and progression systems.
+- **Benefit:** Important information stands out and becomes easier to identify quickly.
+- **Example:** Reward chests use gold and bright visual effects, drawing attention to claimable rewards among other interface elements.
+
+##### 4.6.2. Satisfaction
+- **Why it's related:** Animations, vibrant colors, and visual effects create a more enjoyable experience.
+- **Benefit:** Makes interaction feel rewarding and engaging.
+- **Example:** When a player wins a match, the game displays colorful animations, coins flying onto the screen, and celebratory effects, creating a stronger sense of achievement than a simple text message.
 
 ### 5. Interface Drawbacks Based on HCI Concepts
 
