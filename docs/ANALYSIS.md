@@ -30,13 +30,127 @@
 
 ### 3. Core Use Cases
 
-#### Use Case 1: [Use Case Name]
+#### Use Case 1: Playing a quick online match
 
-- **Context:**
+- **Goal:** Play a competitive pool match and earn coins/rewards.
+- **Context:** This is the most common use case. Sessions typically last 3–10 minutes, making them suitable during breaks, commuting, waiting in line, or relaxing at home.
+- **Where and When:**
+  + Sitting at home on a sofa or bed.
+  + Sitting in a café.
+  + Sitting on public transportation.
+  + Waiting at a bus stop, doctor's office, or school.
+  + During short work or study breaks.
 - **User situation:**
-- **Goal:**
+  + Usually seated.
+  + Occasionally standing while waiting somewhere.
+  + Rarely used while walking because aiming requires precision.
 - **Interaction method:**
+  + Tap buttons to navigate menus.
+  + Drag finger to aim cue.
+  + Pull power meter to control shot strength.
+  + Tap chat/emote buttons.
 - **Interaction flow:**
+  1. Open game.
+  2. Select game mode.
+  3. Choose table.
+  4. Wait for matchmaking.
+  5. Play match.
+  6. View results and rewards.
+  7. Return to main menu.
+
+#### Use Case 2: Managing and Upgrading Equipment
+
+- **Goal:** Improve cue performance and customize equipment to gain advantages in future matches.
+- **Context:** Players collect and upgrade cues to improve attributes such as power, aim, spin, and time available per turn.
+- **Where and When:**
+
+  + Between matches.
+  + During downtime when users do not want to actively play.
+  + While waiting for rewards, friends, or energy systems in other games.
+- **User situation:**
+
+  + Sitting on a sofa, chair, or bed.
+  + Lying down while casually browsing menus.
+  + Casual interaction requiring less concentration than gameplay.
+- **Interaction method:**
+
+  + Tap inventory and equipment menus.
+  + Scroll through available cues.
+  + View cue statistics and upgrade information.
+  + Tap upgrade buttons to spend in-game currency.
+  + Equip preferred cues through menu navigation.
+- **Interaction flow:**
+
+  1. Open inventory or cue collection menu.
+  2. Browse available cues.
+  3. Select a cue.
+  4. Review statistics and upgrade options.
+  5. Upgrade cue using available resources.
+  6. Equip desired cue.
+  7. Return to main menu or start a match.
+
+#### Use Case 3: Collecting Rewards and Progression
+
+- **Goal:** Claim rewards, monitor progression, and earn resources for future gameplay.
+- **Context:** Users log in daily to claim rewards, open victory boxes, complete missions, and track progression.
+- **Where and When:**
+
+  + During daily login sessions.
+  + During short breaks throughout the day.
+  + Immediately after launching the game.
+  + After completing matches.
+- **User situation:**
+
+  + Sitting, standing, lying down, or walking slowly.
+  + Minimal attention and physical effort required.
+  + Often performed as a quick routine activity.
+- **Interaction method:**
+
+  + Tap reward notifications.
+  + Open victory boxes or reward containers.
+  + Tap buttons to claim daily rewards.
+  + Navigate mission and achievement screens.
+  + Review progression indicators and level information.
+- **Interaction flow:**
+
+  1. Open the game.
+  2. View available rewards and notifications.
+  3. Claim daily rewards.
+  4. Open victory boxes or reward containers.
+  5. Review completed missions and achievements.
+  6. Check progression status and earned resources.
+  7. Return to the main menu or start another activity.
+
+#### Use Case 4: Social Communication During Matches
+
+- **Goal:** Express emotions, interact with opponents or friends, and enhance social engagement during gameplay.
+- **Context:** Players communicate using predefined chat messages, emojis, and reactions during gameplay.
+- **Where and When:**
+
+  + During online matches.
+  + Particularly common when playing against friends.
+  + During competitive or casual game sessions.
+- **User situation:**
+
+  + Sitting or standing.
+  + Multitasking between gameplay and communication.
+  + Maintaining focus on the match while interacting socially.
+- **Interaction method:**
+
+  + Tap chat or emoji buttons.
+  + Select predefined messages or reactions.
+  + Send quick social responses without typing.
+  + View incoming messages displayed on-screen.
+- **Interaction flow:**
+
+  1. Enter an online match.
+  2. Open chat or emoji menu.
+  3. Select a predefined message or reaction.
+  4. Send message to opponent or friend.
+  5. Receive and view responses.
+  6. Continue gameplay while communication remains available.
+  7. Finish match and return to menu.
+
 
 ### 4. Interface Benefits Based on HCI Concepts
 
