@@ -191,10 +191,10 @@
 - **Benefit:** Provides immediate feedback about the effects of user actions, allowing quick corrections before committing to a shot.
 - **Example:** While adjusting aim, a player notices that the projected ball path no longer reaches the intended pocket. The guideline changes instantly, allowing them to readjust before shooting.
 
-#### 4.3. Bottom-Placed Controls Improve Mobile Use
+#### 4.3. Corner-Placed Controls Improve Mobile Use
 
 ##### 4.3.1. Reachability
-- **Why it's related:** Frequently used controls such as cue adjustment, spin controls, and menu buttons are placed near the bottom portion of the screen where thumbs can easily reach them.
+- **Why it's related:** Frequently used controls such as cue adjustment, spin controls, and menu buttons are placed at the upper corners of the screen where thumbs can easily reach them.
 - **Benefit:** Reduces physical effort and makes interactions more comfortable during gameplay.
 - **Example:** A player sitting on a bus holds the phone with one hand. They can access important controls using only their thumb without repositioning their grip.
 
