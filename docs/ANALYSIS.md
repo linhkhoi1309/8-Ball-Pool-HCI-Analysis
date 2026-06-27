@@ -30,7 +30,39 @@
 
 ### 3. Core Use Cases
 
-#### Use Case 1: Playing a quick online match
+#### Use Case 1: Selecting a Game Mode and Table
+
+- **Goal:** Choose an appropriate game mode and entry fee (coin bid) based on the player's available coins, skill level, and desired rewards.
+
+- **Context:** Before matchmaking, players select from different game modes and tables. Each table has different entry fees, rewards, rules, and competition levels, requiring players to balance risk and reward.
+
+- **Where and When:**
+  + Immediately after launching the game.
+  + Between completed matches.
+  + During casual or competitive play sessions.
+  + While deciding how much in-game currency to risk.
+
+- **User situation:**
+  + Usually seated while focusing on menu navigation.
+  + May spend additional time comparing tables before making a decision.
+  + Requires moderate attention to understand rewards, entry costs, and potential losses.
+
+- **Interaction method:**
+  + Tap game mode categories (e.g., 1-on-1, tournaments, special events).
+  + Swipe or scroll through available tables.
+  + View entry fees, prize amounts, and table rules.
+  + Tap a table to confirm selection and begin matchmaking.
+
+- **Interaction flow:**
+  1. Open the Play menu.
+  2. Browse available game modes.
+  3. Compare tables based on entry fee, rewards, and rules.
+  4. Select a preferred table.
+  5. Confirm participation by paying the entry fee.
+  6. Wait for matchmaking.
+  7. Enter the selected match.
+
+#### Use Case 2: Playing a quick online match
 
 - **Goal:** Play a competitive pool match and earn coins/rewards.
 
@@ -63,39 +95,38 @@
   6. View results and rewards.
   7. Return to main menu.
 
-#### Use Case 2: Managing and Upgrading Equipment
+#### Use Case 3: Social Communication During Matches
 
-- **Goal:** Improve cue performance and customize equipment to gain advantages in future matches.
+- **Goal:** Express emotions, interact with opponents or friends, and enhance social engagement during gameplay.
 
-- **Context:** Players collect and upgrade cues to improve attributes such as power, aim, spin, and time available per turn.
+- **Context:** Players communicate using predefined chat messages, emojis, and reactions during gameplay.
 
 - **Where and When:**
-  + Between matches.
-  + During downtime when users do not want to actively play.
-  + While waiting for rewards, friends, or energy systems in other games.
+  + During online matches.
+  + Particularly common when playing against friends.
+  + During competitive or casual game sessions.
 
 - **User situation:**
-  + Sitting on a sofa, chair, or bed.
-  + Lying down while casually browsing menus.
-  + Casual interaction requiring less concentration than gameplay.
+  + Sitting or standing.
+  + Multitasking between gameplay and communication.
+  + Maintaining focus on the match while interacting socially.
 
 - **Interaction method:**
-  + Tap inventory and equipment menus.
-  + Scroll through available cues.
-  + View cue statistics and upgrade information.
-  + Tap upgrade buttons to spend in-game currency.
-  + Equip preferred cues through menu navigation.
+  + Tap chat or emoji buttons.
+  + Select predefined messages or reactions.
+  + Send quick social responses without typing.
+  + View incoming messages displayed on-screen.
 
 - **Interaction flow:**
-  1. Open inventory or cue collection menu.
-  2. Browse available cues.
-  3. Select a cue.
-  4. Review statistics and upgrade options.
-  5. Upgrade cue using available resources.
-  6. Equip desired cue.
-  7. Return to main menu or start a match.
+  1. Enter an online match.
+  2. Open chat or emoji menu.
+  3. Select a predefined message or reaction.
+  4. Send message to opponent or friend.
+  5. Receive and view responses.
+  6. Continue gameplay while communication remains available.
+  7. Finish match and return to menu.
 
-#### Use Case 3: Collecting Rewards and Progression
+#### Use Case 4: Collecting Rewards and Progression
 
 - **Goal:** Claim rewards, monitor progression, and earn resources for future gameplay.
 
@@ -128,36 +159,37 @@
   6. Check progression status and earned resources.
   7. Return to the main menu or start another activity.
 
-#### Use Case 4: Social Communication During Matches
+#### Use Case 5: Managing and Upgrading Equipment
 
-- **Goal:** Express emotions, interact with opponents or friends, and enhance social engagement during gameplay.
+- **Goal:** Improve cue performance and customize equipment to gain advantages in future matches.
 
-- **Context:** Players communicate using predefined chat messages, emojis, and reactions during gameplay.
+- **Context:** Players collect and upgrade cues to improve attributes such as power, aim, spin, and time available per turn.
 
 - **Where and When:**
-  + During online matches.
-  + Particularly common when playing against friends.
-  + During competitive or casual game sessions.
+  + Between matches.
+  + During downtime when users do not want to actively play.
+  + While waiting for rewards, friends, or energy systems in other games.
 
 - **User situation:**
-  + Sitting or standing.
-  + Multitasking between gameplay and communication.
-  + Maintaining focus on the match while interacting socially.
+  + Sitting on a sofa, chair, or bed.
+  + Lying down while casually browsing menus.
+  + Casual interaction requiring less concentration than gameplay.
 
 - **Interaction method:**
-  + Tap chat or emoji buttons.
-  + Select predefined messages or reactions.
-  + Send quick social responses without typing.
-  + View incoming messages displayed on-screen.
+  + Tap inventory and equipment menus.
+  + Scroll through available cues.
+  + View cue statistics and upgrade information.
+  + Tap upgrade buttons to spend in-game currency.
+  + Equip preferred cues through menu navigation.
 
 - **Interaction flow:**
-  1. Enter an online match.
-  2. Open chat or emoji menu.
-  3. Select a predefined message or reaction.
-  4. Send message to opponent or friend.
-  5. Receive and view responses.
-  6. Continue gameplay while communication remains available.
-  7. Finish match and return to menu.
+  1. Open inventory or cue collection menu.
+  2. Browse available cues.
+  3. Select a cue.
+  4. Review statistics and upgrade options.
+  5. Upgrade cue using available resources.
+  6. Equip desired cue.
+  7. Return to main menu or start a match.
 
 
 ### 4. Interface Benefits Based on HCI Concepts
