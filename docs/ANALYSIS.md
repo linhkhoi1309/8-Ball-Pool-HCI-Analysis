@@ -425,26 +425,61 @@ Each difficulty is mapped to the specific human-capability or usability concept 
 
 ### 7. Potential Solutions Identification
 
-For each drawback in Section 5, the proposed solution directly addresses the underlying HCI concept (a human capability, a usability dimension, a design principle, a mental model, or an interaction metaphor) and improves the experience for the affected users.
+#### 7.1. Solution for Small-Screen Aiming Can Be Difficult
 
-| Drawback (Section 5) | Proposed Solution | HCI Concept Addressed | How the Solution Helps |
-| --- | --- | --- | --- |
-| 5.1 Small-screen aiming is difficult | Add a precision aiming mode that slows cue rotation (enlarging the effective target) during small adjustments. | Motor system; Fitts's law; error prevention | Lowering the index of difficulty gives finer control and reduces missed shots from small finger movements. |
-| 5.2 Spin control may not match beginner understanding | Show a short preview or label explaining top spin, backspin, and side spin before the shot. | Mental models; feedback; learnability | Immediate feedback aligns system behaviour with the user's prediction, so beginners learn without failed shots. |
-| 5.3 Pool table metaphor is not always complete | Connect power control visually to cue movement, or offer an optional cue-pull control style. | Natural mapping; interaction metaphors | A more direct mapping reconnects shot power to the physical pool metaphor and feels more natural. |
-| 5.4 Home screen can overload the main task | Make the Play action visually dominant and group rewards/events into clearly chunked secondary areas. | Attention; short-term memory (chunking); visibility vs simplicity | Chunking and a single dominant target respect working-memory limits and let users start a match faster. |
-| 5.5 Turn timer can pressure slow or new users | Offer practice modes, clearer timer warnings, or slightly longer timers in low-stakes modes. | Cognitive processing time; accessibility; error reduction | Extra time matches cognitive processing speed and supports universal usability, lowering rushed errors. |
-| 5.6 Cue statistics can be hard to interpret | Add plain-language hints such as "Aim: extends guideline" or "Time: longer turns" beside each stat. | Recognition rather than recall; mental models; learnability | Visible cues let users recognise each attribute's effect instead of recalling it, improving cue decisions. |
-| 5.7 Power meter can cause overpowered shots | Add stronger visual feedback for soft / medium / hard ranges before release. | Feedback; motor accuracy; error prevention | Clearer pre-release feedback makes strength predictable and prevents accidental scratches or poor position. |
-| 5.8 Chat and emoji reactions distract during shots | Add a focus mode that hides or delays opponent reactions during the player's turn. | Focused attention; user control | Protecting focused attention and giving users control over distractions reduces mistakes during aiming. |
-| 5.9 Reward and event icons are not self-explanatory | Add short labels or first-time tooltips and use consistent metaphors for rewards, events, chests, and offers. | Recognition rather than recall; consistency | Recognisable, consistent icons reduce guessing and stop users opening the wrong menu. |
-| 5.10 Menu navigation interrupts the sports experience | Add a "Play Again" path that bypasses non-essential reward and shop screens after a match. | Efficiency; consistent conceptual model; user control | A direct path keeps the conceptual model focused on the sport and lets players continue with fewer interruptions. |
+- Current Problem: Players may struggle to make precise aim adjustments on small screens or in unstable contexts such as while standing or commuting.
 
-### 7.1 Example Solution Paragraph
+- Proposed Solution: Add a precision aiming mode that slows cue movement for fine adjustments, increases visual aim stability near small angle changes, and optionally provides a short zoom or enlarged aiming area when the player is lining up a shot.
 
-Example paragraph based on one of the identified drawbacks:
+- HCI Justification: This reduces motor demands and lowers the effective index of difficulty in Fitts's law by making the target easier to acquire. It also improves error prevention and accessibility because users can aim with less fine dexterity and less frustration.
 
-> One drawback of 8 Ball Pool is that small-screen aiming can be difficult when a user tries to make a precise shot on a phone in a moving or distracting context. In HCI terms this is a **motor system** limitation (dexterity and accuracy) compounded by **Fitts's law**: the exact correct angle is a very small target `S` while the cue ball must travel a long distance `D`, so the index of difficulty `log(D/S + 1)` is high. A practical solution is a precision aiming mode that slows cue rotation during small adjustments, which enlarges the effective target and lowers the index of difficulty. This improves **error prevention** and motor accessibility because the user can aim more accurately, reducing accidental misses and the frustration that lowers **satisfaction**.
+#### 7.2. Solution for Spin Control May Not Match Beginner Understanding
+
+- Current Problem: Beginners often do not understand how spin changes cue-ball movement, so the feature feels confusing or random.
+
+- Proposed Solution: Add an optional spin preview that shows the expected post-shot cue-ball path, label the spin directions with simple explanations, and include a short in-context tutorial the first time the feature is used.
+
+- HCI Justification: The preview strengthens the user's mental model and turns an abstract control into visible feedback. Using recognition rather than recall makes the feature easier to learn and reduces trial-and-error mistakes.
+
+#### 7.3. Solution for The Real Pool Table Metaphor Is Not Always Complete
+
+- Current Problem: The digital interface does not fully match the physical billiards metaphor because shot power and other actions are controlled through separate UI elements.
+
+- Proposed Solution: Make the power meter and cue controls visually integrated with the table, add clearer labels or tooltips for power and spin, and use more direct gesture feedback so players can see how each control affects the shot.
+
+- HCI Justification: Better integration improves natural mapping and keeps the metaphor more consistent with user expectations. Clear labels reduce confusion when the digital interface necessarily diverges from real-world billiards.
+
+#### 7.4. Solution for The Home Screen Can Overload the Main Task
+
+- Current Problem: The home screen presents too many bright promotions, rewards, and events, which distract users from the main task of starting a match.
+
+- Proposed Solution: Prioritise the Play button visually, reduce the prominence of secondary banners, group related items into clearer sections, and allow users to dismiss or collapse non-essential prompts.
+
+- HCI Justification: This supports attention by making the primary action easier to find and reduces cognitive load by limiting visual clutter. It also improves efficiency because users can reach the main task with fewer searches and less divided attention.
+
+#### 7.5. Solution for Turn Timer Can Pressure Slow or New Users
+
+- Current Problem: A fixed countdown timer can rush beginners, older users, or users with slower motor response before they finish processing the shot.
+
+- Proposed Solution: Offer an optional practice mode with a longer timer, give beginners more generous shot time during early matches, and provide clearer legal-shot hints so users can decide faster without feeling rushed.
+
+- HCI Justification: Adjustable timing supports universal usability by accommodating different cognitive and motor speeds. It reduces avoidable errors and protects satisfaction by making the interface feel fairer to slower users.
+
+#### 7.6. Solution for Cue Statistics Can Be Hard to Interpret
+
+- Current Problem: Cue attributes such as force, aim, spin, and time are abstract, so users may not understand what upgrades actually change in play.
+
+- Proposed Solution: Replace raw stats with short plain-language explanations, show small example effects such as "better shot control" or "more turn time," and add a comparison view that highlights the practical difference between cues.
+
+- HCI Justification: This improves recognition rather than recall because users can understand the cue's effect immediately from visible cues. It also helps form a more accurate mental model, leading to better upgrade decisions.
+
+#### 7.7. Solution for Reward and Event Icons Are Not Always Self-Explanatory
+
+- Current Problem: Some reward, event, currency, and chest icons are ambiguous or inconsistent, so users cannot always tell what they do.
+
+- Proposed Solution: Add clearer labels, use more consistent icon styles, keep reward and shop visuals visually distinct, and show short tooltips or badges that explain each icon's purpose.
+
+- HCI Justification: Stronger recognition and consistency reduce guesswork and improve learnability. Clear visual distinctions also support memorability, so returning users can re-identify features more quickly.
 
 ### 8. Conclusion
 
