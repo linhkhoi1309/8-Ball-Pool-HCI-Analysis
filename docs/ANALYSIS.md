@@ -240,19 +240,19 @@ Each drawback below is judged using the fundamental HCI concepts: **human capabi
 
 #### 5.1. Small-Screen Aiming Can Be Difficult
 
-##### 5.1.1. Human capabilities – Motor system (dexterity and accuracy)
+##### 5.1.1. Human capabilities – Motor system
 - **Why it's related:** The motor system is our output system, measured by range of movement, speed, strength, dexterity, and accuracy. Aiming requires fine, accurate thumb movement on a small touch surface.
 - **Drawback:** Users may struggle to aim accurately, especially on a small phone, while playing standing, or when holding the device with one hand.
 - **Example:** A player on a moving bus tries to pocket a ball near the corner pocket. Because the vehicle shakes and the screen is small, the thumb shifts the cue angle slightly and the shot misses, even though the user understood the correct direction.
 - **Why it is a problem:** The motor system is often the cause of errors. An interface that depends on fine motor accuracy becomes harder for users with large fingers, shaky hands, or unstable playing conditions.
 
-##### 5.1.2. Fitts's law (small target, high index of difficulty)
+##### 5.1.2. Fitts's law
 - **Why it's related:** Fitts's law states that movement time depends on the index of difficulty `log(D/S + 1)`, where `S` is the target size and `D` the distance. The exact correct aim angle behaves like a very small target while the cue ball must travel a long distance across the table.
 - **Drawback:** Fine aim adjustment is slow and error-prone because a tiny effective target at a long distance has a high index of difficulty.
 - **Example:** During a time-limited turn, a player repeatedly drags the cue left and right because the aim line keeps moving past the desired angle.
 - **Why it is a problem:** A high index of difficulty means repeated correction wastes time and increases frustration, especially in competitive matches.
 
-##### 5.1.3. Usability (efficiency and errors)
+##### 5.1.3. Usability
 - **Why it's related:** Efficiency (how quickly users perform tasks) and errors (how often mistakes occur and how easily users recover) are two of the five usability dimensions.
 - **Drawback:** The aiming control is less efficient when very small adjustments are needed, and it raises the error rate during a turn.
 - **Example:** A player runs out of turn time while fine-tuning the angle and is forced into a rushed, inaccurate shot.
@@ -260,7 +260,7 @@ Each drawback below is judged using the fundamental HCI concepts: **human capabi
 
 #### 5.2. Spin Control May Not Match Beginner Understanding
 
-##### 5.2.1. Mental models (how the system works)
+##### 5.2.1. Mental models 
 - **Why it's related:** A mental model is the user's internal construction of how a system works, used to predict what will happen next. The spin feature relies on a mental model of real billiards physics.
 - **Drawback:** New users may not understand why moving the spin marker changes the cue ball's movement after contact.
 - **Example:** A beginner moves the spin marker to the bottom of the cue ball without knowing it creates backspin. After the shot, the cue ball rolls backward unexpectedly, and the player may think the result is random or unfair.
@@ -280,7 +280,7 @@ Each drawback below is judged using the fundamental HCI concepts: **human capabi
 
 #### 5.3. The Real Pool Table Metaphor Is Not Always Complete
 
-##### 5.3.1. Interaction metaphors (own properties, may mislead)
+##### 5.3.1. Interaction metaphors 
 - **Why it's related:** Interaction metaphors exploit knowledge users already have from another domain but also have their own properties. 8 Ball Pool uses a real pool table metaphor, yet control is through dragging and on-screen sliders rather than a physical cue.
 - **Drawback:** Some actions feel less natural than real billiards because the digital metaphor adds its own abstract controls.
 - **Example:** In real billiards, shot power comes from physically pushing the cue. In the game, the user pulls a vertical power meter on the side of the screen — efficient for mobile, but disconnected from the table metaphor.
@@ -292,7 +292,7 @@ Each drawback below is judged using the fundamental HCI concepts: **human capabi
 - **Example:** A real billiards player expects power to come from cue motion on the table, but the game splits aiming (on the table) from power (on a side bar).
 - **Why it is a problem:** When the mapping is indirect, the action feels game-like rather than fully natural and must be re-learned.
 
-##### 5.3.3. Mental models (expectation conflict)
+##### 5.3.3. Mental models
 - **Why it's related:** Users who know real billiards expect digital cue control to behave like physical cue movement.
 - **Drawback:** The difference between real cue control and mobile slider control conflicts with that expectation.
 - **Example:** A player instinctively tries to "pull the cue" on the table for power but must instead find a separate meter.
@@ -300,13 +300,13 @@ Each drawback below is judged using the fundamental HCI concepts: **human capabi
 
 #### 5.4. The Home Screen Can Overload the Main Task
 
-##### 5.4.1. Cognition – Attention (selected and divided)
+##### 5.4.1. Cognition – Attention
 - **Why it's related:** Attention can be selected, focused, or divided. A crowded home screen forces the user to divide attention and visually search among many competing elements before acting.
 - **Drawback:** Users who simply want to start a match are distracted by reward icons, event banners, daily bonuses, and shop prompts.
 - **Example:** A casual player opens the app for one quick match but must scan colourful reward and event elements before locating the normal play option.
 - **Why it is a problem:** Dividing attention across many bright, animated targets slows down identification of the single most important action.
 
-##### 5.4.2. Cognition – Memory (short-term limit and chunking)
+##### 5.4.2. Cognition – Memory
 - **Why it's related:** Short-term (working) memory holds only about seven items for a short time. A dense screen presents far more competing options than can be processed at once, and they are not grouped into clear chunks.
 - **Drawback:** Bright icons, badges, animations, and pop-ups overload the limited capacity the user has for the screen.
 - **Example:** A user standing in line scans the screen and cannot immediately tell which element is "Play," because nothing is chunked or visually prioritised.
@@ -332,7 +332,7 @@ Each drawback below is judged using the fundamental HCI concepts: **human capabi
 - **Example:** A player who knows the correct shot runs out of time adjusting the cue and loses the turn.
 - **Why it is a problem:** The player feels punished by interface timing rather than by their actual billiards skill, hurting satisfaction.
 
-##### 5.5.3. Accessibility (cater to universal usability)
+##### 5.5.3. Accessibility 
 - **Why it's related:** Accessibility is a design goal: an interface should cater to universal usability for users with different cognitive and motor abilities.
 - **Drawback:** A fixed timer does not accommodate users who process or move more slowly.
 - **Example:** An older player or a player with a motor impairment cannot reliably complete a shot within the default time.
@@ -352,91 +352,31 @@ Each drawback below is judged using the fundamental HCI concepts: **human capabi
 - **Example:** A player upgrades a cue but later cannot tell whether power, spin, or aim improved in a noticeable way.
 - **Why it is a problem:** Relying on recall instead of recognition reduces confidence and makes progression feel confusing.
 
-##### 5.6.3. Interaction metaphors (cue becomes a game object)
+##### 5.6.3. Interaction metaphors
 - **Why it's related:** The cue is a real billiards object, but in the app it also becomes an upgradeable game item with numeric attributes — a metaphor with its own added properties.
 - **Drawback:** This shifts the cue metaphor from a physical tool to a statistics-driven game object.
 - **Example:** A user expects a cue to mainly affect appearance or feel, but the game links it to attributes such as time and aim.
 - **Why it is a problem:** Metaphors may mislead; the digital cue has properties that do not match a real cue, so expectations break.
 
-#### 5.7. Power Meter Can Cause Accidental Overpowered Shots
+#### 5.7. Reward and Event Icons Are Not Always Self-Explanatory
 
-##### 5.7.1. Human capabilities – Motor system (dexterity and accuracy)
-- **Why it's related:** The motor system's dexterity and accuracy limit how precisely a user can control dragging distance with a finger.
-- **Drawback:** Users may pull slightly too far or release at the wrong moment, producing more power than intended.
-- **Example:** A player wants a soft shot to leave the cue ball near the centre, but the thumb pulls the meter too far and the ball travels into a bad position.
-- **Why it is a problem:** Small motor errors create large gameplay consequences, especially in close matches.
-
-##### 5.7.2. Feedback (insufficient preview before release)
-- **Why it's related:** Actions should have immediate effects; a power meter should give clear feedback about resulting strength before the user commits.
-- **Drawback:** Users do not always get enough feedback about how strong the shot will be in the actual table situation.
-- **Example:** A player pulls the meter to what looks like a medium level, but the ball travels farther than expected and scratches.
-- **Why it is a problem:** Weak pre-release feedback breaks the link between meter position and final ball movement, increasing errors.
-
-##### 5.7.3. Usability (error prevention and reversal)
-- **Why it's related:** An interface should prevent errors and permit easy reversal of actions; preventing and recovering from errors is a usability dimension.
-- **Drawback:** Once the meter is released the shot cannot be undone, so a small slip is unrecoverable.
-- **Example:** An accidental overpowered shot immediately ends the turn with a scratch and no way to revert.
-- **Why it is a problem:** With no error prevention and no reversal, a minor motor slip is punished severely.
-
-#### 5.8. Chat and Emoji Reactions Can Distract During Shots
-
-##### 5.8.1. Cognition – Attention (focused vs divided)
-- **Why it's related:** Focused attention is on one task, while divided attention is split across several at once. A time-sensitive shot needs focused attention on the table, aim line, timer, and controls.
-- **Drawback:** Incoming chat messages or emojis force the player to divide attention during a critical moment.
-- **Example:** A player preparing a final shot is pulled away by an opponent spamming emojis, whose movement attracts the eye.
-- **Why it is a problem:** Extra visual stimuli break focused attention and increase the chance of a mistake.
-
-##### 5.8.2. Usability (errors and efficiency)
-- **Why it's related:** Errors and efficiency are usability dimensions; the interface should help users focus on the main task.
-- **Drawback:** Social features can interfere with the primary task of aiming and shooting.
-- **Example:** A player accidentally taps the chat area while adjusting aim near the edge of the screen.
-- **Why it is a problem:** Non-essential elements placed near gameplay controls cause input errors and reduce efficiency.
-
-##### 5.8.3. User control and mental models
-- **Why it's related:** Users should keep an internal locus of control; they expect a competitive game to protect their turn.
-- **Drawback:** Repeated opponent reactions conflict with the user's expectation of a focused, protected aiming area.
-- **Example:** A player expects opponent messages to stay secondary, but an emoji animation becomes visually prominent during a key shot.
-- **Why it is a problem:** Removing the user's control over distractions conflicts with their mental model of a focused shot-taking environment.
-
-#### 5.9. Reward and Event Icons Are Not Always Self-Explanatory
-
-##### 5.9.1. Recognition rather than recall
+##### 5.7.1. Recognition rather than recall
 - **Why it's related:** Recognition (with a visible, understandable cue) is easier than recall. Icons should let users recognise a function instead of recalling what an ambiguous symbol means.
 - **Drawback:** Some reward, event, currency, or chest icons do not clearly communicate their purpose.
 - **Example:** A returning player sees several icons but cannot tell which is a daily reward, which is an event, and which leads to a shop offer.
 - **Why it is a problem:** When icons fail to support recognition, users fall back on recall or trial-and-error tapping.
 
-##### 5.9.2. Consistency (metaphorical and internal)
+##### 5.7.2. Consistency (metaphorical and internal)
 - **Why it's related:** Internal and metaphorical consistency mean similar things should look similar and reflect real-world meaning.
 - **Drawback:** Reward-like visuals are reused inconsistently, so similar-looking icons do different things.
 - **Example:** A user wanting a free reward opens a paid offer screen by mistake because both use bright, reward-like visuals.
 - **Why it is a problem:** Inconsistent visuals reduce learnability and memorability and erode trust in the interface.
 
-##### 5.9.3. Interaction metaphors (inconsistent metaphors)
+##### 5.7.3. Interaction metaphors (inconsistent metaphors)
 - **Why it's related:** Reward icons use metaphors such as boxes, coins, cash, and trophies, which may not be used consistently everywhere.
 - **Drawback:** The same metaphor (e.g., a chest) can mean different things in different places.
 - **Example:** A chest icon means a free reward in one place, a timed box in another, and a shop item elsewhere.
 - **Why it is a problem:** Inconsistent metaphors make the interface less predictable and can mislead users.
-
-#### 5.10. Menu Navigation Can Interrupt the Sports Experience
-
-##### 5.10.1. Interaction metaphors (inconsistent use)
-- **Why it's related:** Metaphors are highly learnable but can mislead when not used consistently. The gameplay screen uses a strong pool-table metaphor while the surrounding menus use mobile-game resource metaphors.
-- **Drawback:** Moving between realistic billiards and resource-management menus makes the product feel less consistent.
-- **Example:** After a match, the user shifts from a realistic table to screens about coins, boxes, cue upgrades, and limited-time events.
-- **Why it is a problem:** The interaction style switches from "playing pool" to "managing mobile game resources," weakening the sports metaphor.
-
-##### 5.10.2. Consistency and conceptual model
-- **Why it's related:** A conceptual model consists of core activities, objects, and interface metaphors; internal consistency keeps that model stable across screens.
-- **Drawback:** Frequent transitions between gameplay, rewards, shop, and upgrade screens fragment one consistent conceptual model.
-- **Example:** A casual player wanting another match is routed through post-match rewards and upgrade prompts first.
-- **Why it is a problem:** An inconsistent conceptual model adds steps between the user's intention and the next match.
-
-##### 5.10.3. Usability (efficiency) and mental models
-- **Why it's related:** Efficiency is a usability dimension, and the system flow should match the user's mental model of what they are doing (playing a sport).
-- **Drawback:** Users who mainly want a billiards experience do not expect so many economy, event, and upgrade screens around each match.
-- **Example:** A user finishes a match expecting to return to table selection but is guided through rewards and offers.
-- **Why it is a problem:** When flow does not match the user's goal, efficiency and satisfaction both drop.
 
 ### 6. Difficulties for Different User Types and Contexts
 
