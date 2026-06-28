@@ -404,26 +404,6 @@ Target users:
 - **Example:** An older player or a player with a motor impairment cannot reliably complete a shot within the default time.
 - **Why it is a problem:** A single timing assumption excludes part of the user community that the interface should support.
 
-##### Power Meter Can Cause Accidental Overpowered Shots
-
-###### Human capabilities – Motor system (dexterity and accuracy)
-- **Why it's related:** The motor system's dexterity and accuracy limit how precisely a user can control dragging distance with a finger.
-- **Drawback:** Users may pull slightly too far or release at the wrong moment, producing more power than intended.
-- **Example:** A player wants a soft shot to leave the cue ball near the centre, but the thumb pulls the meter too far and the ball travels into a bad position.
-- **Why it is a problem:** Small motor errors create large gameplay consequences, especially in close matches.
-
-###### Feedback (insufficient preview before release)
-- **Why it's related:** Actions should have immediate effects; a power meter should give clear feedback about resulting strength before the user commits.
-- **Drawback:** Users do not always get enough feedback about how strong the shot will be in the actual table situation.
-- **Example:** A player pulls the meter to what looks like a medium level, but the ball travels farther than expected and scratches.
-- **Why it is a problem:** Weak pre-release feedback breaks the link between meter position and final ball movement, increasing errors.
-
-###### Usability (error prevention and reversal)
-- **Why it's related:** An interface should prevent errors and permit easy reversal of actions; preventing and recovering from errors is a usability dimension.
-- **Drawback:** Once the meter is released the shot cannot be undone, so a small slip is unrecoverable.
-- **Example:** An accidental overpowered shot immediately ends the turn with a scratch and no way to revert.
-- **Why it is a problem:** With no error prevention and no reversal, a minor motor slip is punished severely.
-
 ### 2.4.3. Use Case 3: Social Communication During Matches
 
 Target users: 
@@ -434,25 +414,6 @@ Target users:
 
 #### b. Drawbacks
 
-##### Chat and Emoji Reactions Can Distract During Shots
-
-###### Cognition – Attention (focused vs divided)
-- **Why it's related:** Focused attention is on one task, while divided attention is split across several at once. A time-sensitive shot needs focused attention on the table, aim line, timer, and controls.
-- **Drawback:** Incoming chat messages or emojis force the player to divide attention during a critical moment.
-- **Example:** A player preparing a final shot is pulled away by an opponent spamming emojis, whose movement attracts the eye.
-- **Why it is a problem:** Extra visual stimuli break focused attention and increase the chance of a mistake.
-
-###### Usability (errors and efficiency)
-- **Why it's related:** Errors and efficiency are usability dimensions; the interface should help users focus on the main task.
-- **Drawback:** Social features can interfere with the primary task of aiming and shooting.
-- **Example:** A player accidentally taps the chat area while adjusting aim near the edge of the screen.
-- **Why it is a problem:** Non-essential elements placed near gameplay controls cause input errors and reduce efficiency.
-
-###### User control and mental models
-- **Why it's related:** Users should keep an internal locus of control; they expect a competitive game to protect their turn.
-- **Drawback:** Repeated opponent reactions conflict with the user's expectation of a focused, protected aiming area.
-- **Example:** A player expects opponent messages to stay secondary, but an emoji animation becomes visually prominent during a key shot.
-- **Why it is a problem:** Removing the user's control over distractions conflicts with their mental model of a focused shot-taking environment.
 
 ### 2.4.4. Use Case 4: Collecting Rewards and Progression
 
@@ -493,26 +454,6 @@ Target users:
 .
 
 #### b. Drawbacks
-
-##### Cue Statistics Can Be Hard to Interpret
-
-###### Mental models
-- **Why it's related:** Mental models let users predict how a system behaves. Cue attributes such as force, aim, spin, and time are abstract statistics, so beginners cannot easily predict their effect on a match.
-- **Drawback:** Users may choose or upgrade cues without understanding what each statistic actually does.
-- **Example:** A new player picks a cue because it looks attractive, not realising another cue offers more aim support or more time per turn.
-- **Why it is a problem:** Decisions based on appearance instead of an accurate mental model lead to poor use of limited resources.
-
-###### Recognition rather than recall
-- **Why it's related:** Recognition (remembering with a visible cue) is easier than recall (remembering with no help). Raw numeric stats force users to recall what each attribute means rather than recognise it.
-- **Drawback:** Without short explanations, users must remember from memory what "aim" or "time" changes in play.
-- **Example:** A player upgrades a cue but later cannot tell whether power, spin, or aim improved in a noticeable way.
-- **Why it is a problem:** Relying on recall instead of recognition reduces confidence and makes progression feel confusing.
-
-###### Interaction metaphors (cue becomes a game object)
-- **Why it's related:** The cue is a real billiards object, but in the app it also becomes an upgradeable game item with numeric attributes — a metaphor with its own added properties.
-- **Drawback:** This shifts the cue metaphor from a physical tool to a statistics-driven game object.
-- **Example:** A user expects a cue to mainly affect appearance or feel, but the game links it to attributes such as time and aim.
-- **Why it is a problem:** Metaphors may mislead; the digital cue has properties that do not match a real cue, so expectations break.
 
 
 ### 2.5. Difficulties for Different User Types and Contexts
