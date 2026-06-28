@@ -263,6 +263,20 @@ Target users:
 - **Example:** A user finishes a match expecting to return to table selection but is guided through rewards and offers.
 - **Why it is a problem:** When flow does not match the user's goal, efficiency and satisfaction both drop.
 
+##### Comparing Tables Overloads Short-Term Memory
+
+###### Cognition – Memory (short-term limit and chunking)
+- **Why it's related:** Short-term memory holds only about seven items for roughly ten seconds. Each table shows an entry fee, a prize, and rules the player must weigh against the others.
+- **Drawback:** While scrolling between tables, players must remember earlier tables' fees and rewards, but those values scroll out of view.
+- **Example:** A player comparing several tables forgets the prize of the first table by the time they reach the fourth and must scroll back.
+- **Why it is a problem:** Exceeding the ~7-item working-memory limit forces repeated re-checking, slowing the choice and adding effort.
+
+###### Usability (efficiency)
+- **Why it's related:** Efficiency is how quickly users complete a task, and choosing a table is a frequent decision made before every match.
+- **Drawback:** Without a side-by-side comparison view, weighing risk and reward across tables takes many extra steps.
+- **Example:** A competitive player scrolls back and forth several times before committing to a stake.
+- **Why it is a problem:** Repeated comparison steps slow down a task the player performs many times in a session.
+
 ### 2.4.2. Use Case 2: Playing a quick online match
 
 Target users: 
@@ -404,6 +418,20 @@ Target users:
 - **Example:** An older player or a player with a motor impairment cannot reliably complete a shot within the default time.
 - **Why it is a problem:** A single timing assumption excludes part of the user community that the interface should support.
 
+##### Key Feedback Can Fall Outside Sharp Vision
+
+###### Human senses – Vision (view frustum, foveal region)
+- **Why it's related:** Only the ~2° foveal region sees in high detail; the rest of the visual field mainly senses movement. During a shot the player's gaze is fixed on the cue ball and the target pocket.
+- **Drawback:** Status changes shown at the screen edges (turn indicator, foul messages, opponent actions) appear in peripheral vision and can be missed.
+- **Example:** While concentrating on a corner-pocket shot, a player does not notice a "foul" or "your turn" message displayed at the top of the screen.
+- **Why it is a problem:** Information placed outside the foveal area is easily overlooked, so the player misses feedback the interface assumed they would see.
+
+###### Feedback (visual only) and Usability (errors)
+- **Why it's related:** Feedback can be visual, audio, or haptic, and errors are a usability dimension. Some game states are signalled mainly by a brief visual cue.
+- **Drawback:** When important feedback relies on a single peripheral visual cue without strong audio or haptic backup, players can act on a wrong assumption about the game state.
+- **Example:** A player keeps lining up a shot, unaware their turn already ended because the only signal was a small on-screen message.
+- **Why it is a problem:** Single-channel, easily missed feedback increases avoidable errors during fast play.
+
 ### 2.4.3. Use Case 3: Social Communication During Matches
 
 Target users: 
@@ -414,6 +442,45 @@ Target users:
 
 #### b. Drawbacks
 
+##### Communicating Competes With the Match for Attention
+
+###### Cognition – Attention (divided)
+- **Why it's related:** Attention can be divided across tasks, but splitting it lowers performance on each. Players must follow the table while also opening chat and choosing a message.
+- **Drawback:** Selecting an emoji or canned message pulls attention away from aiming and the turn timer.
+- **Example:** A player browsing reactions to reply to a friend looks back up to find their shot timer nearly expired.
+- **Why it is a problem:** Divided attention between gameplay and communication reduces accuracy and can cause rushed or missed shots.
+
+###### Human senses – Vision (view frustum, foveal region)
+- **Why it's related:** Only the ~2° foveal region sees in high detail; the periphery mainly senses movement. During a shot the player's gaze is fixed on the cue ball and target.
+- **Drawback:** Messages shown briefly at the edge of the screen can go unread because they fall outside sharp central vision.
+- **Example:** An opponent sends "Good luck," but the focused player never sees it and appears to ignore it.
+- **Why it is a problem:** On-screen messages outside the foveal region defeat the social purpose of the feature when they are missed.
+
+###### Usability (efficiency and errors)
+- **Why it's related:** Efficiency and errors are two usability dimensions. Communication shares the same screen and the same limited turn time as the shot.
+- **Drawback:** Time spent operating chat reduces the time available to plan and execute the shot, raising the error rate.
+- **Example:** A player who stops to react to a message then rushes the shot and misses.
+- **Why it is a problem:** A social feature that lowers shot efficiency and increases mistakes trades core-task usability for engagement.
+
+##### Predefined Reactions Can Be Misread or Misused
+
+###### Interaction metaphors (culturally dependent, potentially misleading)
+- **Why it's related:** Metaphors rely on knowledge from another domain, but they are culturally dependent and can mislead. Emojis and canned phrases carry different meanings across cultures.
+- **Drawback:** A reaction meant as friendly may read as mocking to an opponent from a different background.
+- **Example:** A "laughing" emote sent after a good shot is taken as taunting rather than playful.
+- **Why it is a problem:** A metaphor that is not universally understood can produce the opposite of the intended social effect.
+
+###### Consistency (metaphorical and internal)
+- **Why it's related:** Metaphorical consistency means symbols should reflect a stable real-world meaning. A fixed set of emotes is reused in every match regardless of situation.
+- **Drawback:** The same limited reactions are applied to very different moments, so their meaning becomes ambiguous.
+- **Example:** A "thumbs-up" used both to congratulate and to concede leaves the receiver unsure which is meant.
+- **Why it is a problem:** Inconsistent meaning makes the communication channel less predictable and weakens its usefulness.
+
+###### Usability (satisfaction)
+- **Why it's related:** Satisfaction is a usability dimension covering how users feel about the interaction, and social features exist mainly to improve it.
+- **Drawback:** A small set of repeatable reactions is easily used to provoke or "spam" opponents, with no quick way to recover.
+- **Example:** A losing player is repeatedly sent the same emote and feels harassed rather than entertained.
+- **Why it is a problem:** When a social feature reduces rather than increases satisfaction, it works against its own goal.
 
 ### 2.4.4. Use Case 4: Collecting Rewards and Progression
 
@@ -445,6 +512,34 @@ Target users:
 - **Example:** A chest icon means a free reward in one place, a timed box in another, and a shop item elsewhere.
 - **Why it is a problem:** Inconsistent metaphors make the interface less predictable and can mislead users.
 
+##### Many Simultaneous Rewards Exceed Attention and Memory
+
+###### Cognition – Attention (divided) and Memory (short-term limit)
+- **Why it's related:** Working memory holds about seven chunks, and attention is divided across competing targets. Daily logins present rewards, chests, missions, and progression all at once.
+- **Drawback:** Players face more claimable items and indicators than can be tracked at a glance.
+- **Example:** After opening the game, a user is unsure which rewards they have already claimed among several flashing prompts.
+- **Why it is a problem:** When the screen exceeds attention and memory limits, users miss rewards or repeat actions.
+
+###### Usability (efficiency)
+- **Why it's related:** Efficiency is how quickly users complete a task, and claiming rewards is a quick routine performed daily.
+- **Drawback:** Collecting each reward through separate taps and screens makes a simple routine slower than necessary.
+- **Example:** A user must tap through several pop-ups one by one to collect a daily bonus.
+- **Why it is a problem:** Repeated steps for a frequent task reduce efficiency for the user's quick-routine goal.
+
+##### Reward Value and Rarity Can Depend on Colour
+
+###### Human senses – Vision (colour perception)
+- **Why it's related:** 7–8% of males cannot distinguish red from green, and reward rarity is commonly coded by colour (e.g., green/blue/purple/gold tiers).
+- **Drawback:** A colour-blind player may not tell a common reward from a rare one when only colour distinguishes them.
+- **Example:** A user cannot see that one chest is "rare" because its coloured border looks the same as a common one.
+- **Why it is a problem:** Colour-only coding fails part of the user community and hides meaningful differences.
+
+###### Usability (memorability)
+- **Why it's related:** Memorability is how easily returning users re-establish proficiency, and many users open rewards only once a day or after a break.
+- **Drawback:** If rarity and reward types are signalled mainly through colour or shifting visuals, returning users must relearn what each means.
+- **Example:** A user returning after a week cannot remember which colour indicated the best reward.
+- **Why it is a problem:** Weak, colour-dependent cues raise the re-learning effort each session.
+
 ### 2.4.5. Use Case 5: Managing and Upgrading Equipment
 
 Target users: 
@@ -455,6 +550,53 @@ Target users:
 
 #### b. Drawbacks
 
+##### Cue Statistics Are Hard to Interpret
+
+###### Mental models (how the system works)
+- **Why it's related:** A mental model lets users predict a system's behaviour. Cue attributes — force, aim, spin, and time — are abstract values that do not map clearly to what happens on the table.
+- **Drawback:** Players cannot easily predict how a higher "aim" or "spin" rating will change an actual shot.
+- **Example:** A player upgrades "aim" expecting visibly better accuracy but cannot perceive any concrete difference in play.
+- **Why it is a problem:** When numbers do not connect to a clear mental model, upgrade decisions become guesswork.
+
+###### Recognition rather than recall
+- **Why it's related:** Recognition with a visible cue is easier than recall. Bare stat bars force users to recall what each attribute means and what a "good" value is.
+- **Drawback:** Without plain-language descriptions, users must remember the meaning of each statistic instead of recognising its effect.
+- **Example:** A player sees "Time 4" but cannot recall whether it refers to turn time or how much a value of 6 would help.
+- **Why it is a problem:** Forcing recall over recognition lowers learnability and leads to poor upgrade choices.
+
+###### Usability (learnability)
+- **Why it's related:** Learnability is a core usability dimension, and the upgrade system assumes players already understand billiards-style attributes.
+- **Drawback:** New players cannot learn what upgrades do without trial, error, and spent currency.
+- **Example:** A beginner spends coins upgrading the wrong attribute and only later realises it did not match their play style.
+- **Why it is a problem:** Weak learnability means users pay real in-game cost to learn what the interface could have explained.
+
+##### Comparing Cues Overloads Short-Term Memory
+
+###### Cognition – Memory (short-term limit and chunking)
+- **Why it's related:** Short-term memory holds only about seven items for roughly ten seconds. Each cue has several attributes, and players compare them across many cues.
+- **Drawback:** When moving between cues, players must hold the previous cue's stats in memory, but those values disappear from view.
+- **Example:** A player comparing four cues forgets the spin value of the first by the time they inspect the third.
+- **Why it is a problem:** Exceeding working-memory limits forces repeated back-and-forth navigation, slowing the decision.
+
+###### Usability (efficiency)
+- **Why it's related:** Efficiency measures how quickly users complete tasks, and choosing the best cue requires comparing multiple values across screens.
+- **Drawback:** Without a side-by-side comparison, selecting a cue takes many extra navigation steps.
+- **Example:** A player repeatedly switches between two cue detail screens to remember which has more power.
+- **Why it is a problem:** Extra navigation lowers efficiency for what should be a simple comparison.
+
+##### Upgrades Are Costly and Hard to Reverse
+
+###### Usability (errors) and reversal of actions
+- **Why it's related:** Errors and recovery are a usability dimension, and Shneiderman's rules call for easy reversal of actions. Upgrades permanently spend limited currency.
+- **Drawback:** A mistaken upgrade cannot be undone, and the spent resources cannot be recovered.
+- **Example:** A player upgrades a cue they later stop using and cannot reclaim the coins.
+- **Why it is a problem:** Irreversible, costly actions punish ordinary mistakes and make users anxious about experimenting.
+
+###### Feedback (before the action)
+- **Why it's related:** Actions should have clear effects, and feedback should help users decide before committing. Upgrades give little preview of their practical benefit.
+- **Drawback:** The interface does not clearly show what an upgrade will change before the currency is spent.
+- **Example:** A player confirms an upgrade without a clear before/after of how the shot will improve.
+- **Why it is a problem:** Without pre-action feedback, users commit irreversible resources without understanding the outcome.
 
 ### 2.5. Difficulties for Different User Types and Contexts
 
@@ -511,15 +653,7 @@ Each difficulty is mapped to the specific human-capability or usability concept 
 
 - HCI Justification: Adjustable timing supports universal usability by accommodating different cognitive and motor speeds. It reduces avoidable errors and protects satisfaction by making the interface feel fairer to slower users.
 
-#### 2.6.6. Solution for Cue Statistics Can Be Hard to Interpret
-
-- Current Problem: Cue attributes such as force, aim, spin, and time are abstract, so users may not understand what upgrades actually change in play.
-
-- Proposed Solution: Replace raw stats with short plain-language explanations, show small example effects such as "better shot control" or "more turn time," and add a comparison view that highlights the practical difference between cues.
-
-- HCI Justification: This improves recognition rather than recall because users can understand the cue's effect immediately from visible cues. It also helps form a more accurate mental model, leading to better upgrade decisions.
-
-#### 2.6.7. Solution for Reward and Event Icons Are Not Always Self-Explanatory
+#### 2.6.6. Solution for Reward and Event Icons Are Not Always Self-Explanatory
 
 - Current Problem: Some reward, event, currency, and chest icons are ambiguous or inconsistent, so users cannot always tell what they do.
 
