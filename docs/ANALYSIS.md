@@ -93,38 +93,7 @@
   6. View results and rewards.
   7. Return to main menu.
 
-### Use Case 3: Social Communication During Matches
-
-- **Goal:** Express emotions, interact with opponents or friends, and enhance social engagement during gameplay.
-
-- **Context:** Players communicate using predefined chat messages, emojis, and reactions during gameplay.
-
-- **Where and When:**
-  + During online matches.
-  + Particularly common when playing against friends.
-  + During competitive or casual game sessions.
-
-- **User situation:**
-  + Sitting or standing.
-  + Multitasking between gameplay and communication.
-  + Maintaining focus on the match while interacting socially.
-
-- **Interaction method:**
-  + Tap chat or emoji buttons.
-  + Select predefined messages or reactions.
-  + Send quick social responses without typing.
-  + View incoming messages displayed on-screen.
-
-- **Interaction flow:**
-  1. Enter an online match.
-  2. Open chat or emoji menu.
-  3. Select a predefined message or reaction.
-  4. Send message to opponent or friend.
-  5. Receive and view responses.
-  6. Continue gameplay while communication remains available.
-  7. Finish match and return to menu.
-
-### Use Case 4: Collecting Rewards and Progression
+### Use Case 3: Collecting Rewards and Progression
 
 - **Goal:** Claim rewards, monitor progression, and earn resources for future gameplay.
 
@@ -157,7 +126,7 @@
   6. Check progression status and earned resources.
   7. Return to the main menu or start another activity.
 
-### Use Case 5: Managing and Upgrading Equipment
+### Use Case 4: Managing and Upgrading Equipment
 
 - **Goal:** Improve cue performance and customize equipment to gain advantages in future matches.
 
@@ -219,7 +188,12 @@ Target users:
 
 #### a. Benefits
 
-.
+##### Partially Visible List Items Signal More Content
+
+###### Visibility
+- **Why it's related:** Visibility means operations should be visible to users. The game-mode list is horizontal, and the item at the right edge is deliberately shown half cut off.
+- **Benefit:** The clipped item makes the scroll operation visible, telling players that more modes exist to the right without needing a separate label, arrow, or instruction.
+- **Example:** A player who sees a mode card sliced by the screen edge understands they can swipe to reveal the remaining modes, instead of assuming the visible ones are all that are available.
 
 #### b. Drawbacks
 
@@ -418,71 +392,7 @@ Target users:
 - **Example:** An older player or a player with a motor impairment cannot reliably complete a shot within the default time.
 - **Why it is a problem:** A single timing assumption excludes part of the user community that the interface should support.
 
-##### Key Feedback Can Fall Outside Sharp Vision
-
-###### Human senses – Vision (view frustum, foveal region)
-- **Why it's related:** Only the ~2° foveal region sees in high detail; the rest of the visual field mainly senses movement. During a shot the player's gaze is fixed on the cue ball and the target pocket.
-- **Drawback:** Status changes shown at the screen edges (turn indicator, foul messages, opponent actions) appear in peripheral vision and can be missed.
-- **Example:** While concentrating on a corner-pocket shot, a player does not notice a "foul" or "your turn" message displayed at the top of the screen.
-- **Why it is a problem:** Information placed outside the foveal area is easily overlooked, so the player misses feedback the interface assumed they would see.
-
-###### Feedback (visual only) and Usability (errors)
-- **Why it's related:** Feedback can be visual, audio, or haptic, and errors are a usability dimension. Some game states are signalled mainly by a brief visual cue.
-- **Drawback:** When important feedback relies on a single peripheral visual cue without strong audio or haptic backup, players can act on a wrong assumption about the game state.
-- **Example:** A player keeps lining up a shot, unaware their turn already ended because the only signal was a small on-screen message.
-- **Why it is a problem:** Single-channel, easily missed feedback increases avoidable errors during fast play.
-
-### 2.4.3. Use Case 3: Social Communication During Matches
-
-Target users: 
-
-#### a. Benefits
-
-.
-
-#### b. Drawbacks
-
-##### Communicating Competes With the Match for Attention
-
-###### Cognition – Attention (divided)
-- **Why it's related:** Attention can be divided across tasks, but splitting it lowers performance on each. Players must follow the table while also opening chat and choosing a message.
-- **Drawback:** Selecting an emoji or canned message pulls attention away from aiming and the turn timer.
-- **Example:** A player browsing reactions to reply to a friend looks back up to find their shot timer nearly expired.
-- **Why it is a problem:** Divided attention between gameplay and communication reduces accuracy and can cause rushed or missed shots.
-
-###### Human senses – Vision (view frustum, foveal region)
-- **Why it's related:** Only the ~2° foveal region sees in high detail; the periphery mainly senses movement. During a shot the player's gaze is fixed on the cue ball and target.
-- **Drawback:** Messages shown briefly at the edge of the screen can go unread because they fall outside sharp central vision.
-- **Example:** An opponent sends "Good luck," but the focused player never sees it and appears to ignore it.
-- **Why it is a problem:** On-screen messages outside the foveal region defeat the social purpose of the feature when they are missed.
-
-###### Usability (efficiency and errors)
-- **Why it's related:** Efficiency and errors are two usability dimensions. Communication shares the same screen and the same limited turn time as the shot.
-- **Drawback:** Time spent operating chat reduces the time available to plan and execute the shot, raising the error rate.
-- **Example:** A player who stops to react to a message then rushes the shot and misses.
-- **Why it is a problem:** A social feature that lowers shot efficiency and increases mistakes trades core-task usability for engagement.
-
-##### Predefined Reactions Can Be Misread or Misused
-
-###### Interaction metaphors (culturally dependent, potentially misleading)
-- **Why it's related:** Metaphors rely on knowledge from another domain, but they are culturally dependent and can mislead. Emojis and canned phrases carry different meanings across cultures.
-- **Drawback:** A reaction meant as friendly may read as mocking to an opponent from a different background.
-- **Example:** A "laughing" emote sent after a good shot is taken as taunting rather than playful.
-- **Why it is a problem:** A metaphor that is not universally understood can produce the opposite of the intended social effect.
-
-###### Consistency (metaphorical and internal)
-- **Why it's related:** Metaphorical consistency means symbols should reflect a stable real-world meaning. A fixed set of emotes is reused in every match regardless of situation.
-- **Drawback:** The same limited reactions are applied to very different moments, so their meaning becomes ambiguous.
-- **Example:** A "thumbs-up" used both to congratulate and to concede leaves the receiver unsure which is meant.
-- **Why it is a problem:** Inconsistent meaning makes the communication channel less predictable and weakens its usefulness.
-
-###### Usability (satisfaction)
-- **Why it's related:** Satisfaction is a usability dimension covering how users feel about the interaction, and social features exist mainly to improve it.
-- **Drawback:** A small set of repeatable reactions is easily used to provoke or "spam" opponents, with no quick way to recover.
-- **Example:** A losing player is repeatedly sent the same emote and feels harassed rather than entertained.
-- **Why it is a problem:** When a social feature reduces rather than increases satisfaction, it works against its own goal.
-
-### 2.4.4. Use Case 4: Collecting Rewards and Progression
+### 2.4.3. Use Case 3: Collecting Rewards and Progression
 
 Target users: 
 
@@ -540,13 +450,23 @@ Target users:
 - **Example:** A user returning after a week cannot remember which colour indicated the best reward.
 - **Why it is a problem:** Weak, colour-dependent cues raise the re-learning effort each session.
 
-### 2.4.5. Use Case 5: Managing and Upgrading Equipment
+### 2.4.4. Use Case 4: Managing and Upgrading Equipment
 
 Target users: 
 
 #### a. Benefits
 
-.
+##### Bars Make Comparing Cues Easier Than Numbers
+
+###### Recognition rather than recall
+- **Why it's related:** Recognition with a visible cue is easier than recall. Bar lengths can be compared directly on screen, so the player does not have to hold and recall earlier numeric values.
+- **Benefit:** Relative strength between two cues is recognised visually from the difference in bar length rather than recalled and computed.
+- **Example:** A player comparing two cues sees one power bar clearly longer than the other and chooses it without remembering that one read "7" and the other "5".
+
+###### Cognition – Memory (short-term limit and chunking)
+- **Why it's related:** Short-term memory holds only about seven items for a short time. A bar acts as a single perceptual chunk that encodes a value, whereas several separate numbers each occupy limited working memory.
+- **Benefit:** Reading attributes as bars lowers memory load, because their relative sizes are perceived together instead of stored as individual figures.
+- **Example:** A player weighing four attributes across two cues compares the bar shapes side by side rather than trying to keep eight numbers in mind at once.
 
 #### b. Drawbacks
 
